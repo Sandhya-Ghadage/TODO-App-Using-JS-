@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO App (Using JS)</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div>
+        <div id="add_btn">
+            <button onclick="add()">Add user</button>
+        </div>
+        <div>
+            <form id="create_form">
+                <label>Username</label>
+                <input type="text" id="name">
+                <label>Email</label>
+                <input type="email" id="email">
+                <button type="button" onclick="create()">Create</button>
+            </form>
+        </div>
+        <div>
+            <form id="update_form">
+                <input type="text" id="id">
+                <label>Username</label>
+                <input type="text" id="uname">
+                <label>Email</label>
+                <input type="email" id="uemail">
+                <button type="button" onclick="update()">Update</button>
+            </form>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+                <tbody id="table_data">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
